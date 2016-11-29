@@ -3,7 +3,7 @@ version: '2'
 services:
     jmeter:
         image: jmeter
-        container_name: jmeter_web_flask
+        container_name: jmeter_web_flask_individuel
         build: .
         network_mode: "host"
         volumes:
