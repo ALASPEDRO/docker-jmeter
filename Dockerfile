@@ -12,8 +12,10 @@ RUN mkdir results
 
 COPY *.jmx ./
 COPY *.csv ./
+COPY jmeter.sh ./
 
 
 VOLUME /results
 
-CMD ["bin/bash"] # on peut l'enlever pour faire le link entre services
+CMD ["bin/bash"]
+# on peut l'enlever pour faire le link entre services DOCKER_WEB_SERVER_FLASK_SERVICE_HOST
